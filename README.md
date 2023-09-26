@@ -4,7 +4,8 @@ Welcome to the Music Player repository, a project developed during my internship
 
 🎶 **Enjoy Your Music Collection with This Versatile Music Player!** 🎵
 
-![Music Player Screenshot](music_player_screenshot.png)
+<img width="314" alt="music_player_ss1" src="https://github.com/NikitaBeeram/CodeClauseInternship_Music_Player_Python/assets/108002991/99971a6f-f540-464d-a403-7685a14967fd">
+
 ## Code Description 🧾
 
 The Music Player is built using Python and the tkinter library for the graphical user interface. The code is organized into functions for adding songs, controlling playback, managing playlists, adjusting volume, and updating the user interface. It also utilizes the pygame library for audio playback and the mutagen library to retrieve song information. The code is designed to be user-friendly and easy to understand, making it a great project for both beginners and experienced developers.
@@ -37,8 +38,11 @@ The Music Player is a versatile and user-friendly application built using Python
 - Enjoy your music collection with a user-friendly interface.
 
 ## Screenshots 📷
+### Adding Songs to Playlist
+<img width="314" alt="music_player_ss2" src="https://github.com/NikitaBeeram/CodeClauseInternship_Music_Player_Python/assets/108002991/63858198-9d2f-43fa-8500-ec34df27632a">
 
-![Playlist Screenshot](playlist_screenshot.png)
-![Volume Control Screenshot](volume_screenshot.png)
+### Volume control
+<img width="313" alt="music_player_ss3" src="https://github.com/NikitaBeeram/CodeClauseInternship_Music_Player_Python/assets/108002991/75c56e39-e199-4385-9a08-0b23540f8aaf">
+<img width="316" alt="music_player_ss4" src="https://github.com/NikitaBeeram/CodeClauseInternship_Music_Player_Python/assets/108002991/c3fcb31a-7193-4422-9356-538f6d3fcbef">
 
 # Thank You
