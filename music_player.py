@@ -15,16 +15,16 @@ root.configure(bg="white")
 pygame.mixer.init()
 
 def add_a_Song():
-    song = filedialog.askopenfilename(initialdir='C:\\Users\\HP\\OneDrive\\Desktop\\niki\\tkinter\\songs',title="Choose a Song",filetypes=(("mp3 Files", "*.mp3"), ))
-    song = song.replace("C:/Users/HP/OneDrive/Desktop/niki/tkinter/songs/","")
+    song = filedialog.askopenfilename(initialdir='C:\\Users\\songs',title="Choose a Song",filetypes=(("mp3 Files", "*.mp3"), ))
+    song = song.replace("C:/Users/songs/","")
     song = song.replace(".mp3", "")
     playlistBox.insert(END, song)
 
 def add_many_songs():
-    songs = filedialog.askopenfilenames(initialdir='C:\\Users\\HP\\OneDrive\\Desktop\\niki\\tkinter\\songs',title="Choose a Song",filetypes=(("mp3 Files", "*.mp3"), ))
+    songs = filedialog.askopenfilenames(initialdir='C:\\Users\\songs',title="Choose a Song",filetypes=(("mp3 Files", "*.mp3"), ))
 
     for song in songs:
-        song = song.replace("C:/Users/HP/OneDrive/Desktop/niki/tkinter/songs/","")
+        song = song.replace("C:/Users/songs/","")
         song = song.replace(".mp3", "")
         playlistBox.insert(END, song)
 
@@ -47,7 +47,7 @@ def play_time():
     #SliderLabel.config(text=f'Slider: {int(SongSlider.get())} and Song Pos: {int(currentTime)}')
 
     song = playlistBox.get(ACTIVE)
-    song = f'C:\\Users\\HP\\OneDrive\\Desktop\\niki\\tkinter\\songs\\{song}.mp3'
+    song = f'C:\\Users\\songs\\{song}.mp3'
     songMut = MP3(song)
     global songLength
     songLength = songMut.info.length
@@ -78,7 +78,7 @@ def play():
     global stopped
     stopped = False
     song = playlistBox.get(ACTIVE)
-    song = f'C:\\Users\\HP\\OneDrive\\Desktop\\niki\\tkinter\\songs\\{song}.mp3'
+    song = f'C:\\Users\\songs\\{song}.mp3'
 
     SongSlider.config(value=0)
 
@@ -118,7 +118,7 @@ def next_song():
     nextSong = playlistBox.curselection()
     nextSong = nextSong[0] + 1
     song = playlistBox.get(nextSong)
-    song = f'C:\\Users\\HP\\OneDrive\\Desktop\\niki\\tkinter\\songs\\{song}.mp3'
+    song = f'C:\\Users\\songs\\{song}.mp3'
     pygame.mixer.music.load(song)
     pygame.mixer.music.play(loops=0)
     playlistBox.selection_clear(0,END)
@@ -132,7 +132,7 @@ def prev_song():
     prevSong = playlistBox.curselection()
     prevSong = prevSong[0] - 1
     song = playlistBox.get(prevSong)
-    song = f'C:\\Users\\HP\\OneDrive\\Desktop\\niki\\tkinter\\songs\\{song}.mp3'
+    song = f'C:\\Users\\songs\\{song}.mp3'
     pygame.mixer.music.load(song)
     pygame.mixer.music.play(loops=0)
     playlistBox.selection_clear(0,END)
@@ -141,7 +141,7 @@ def prev_song():
 
 def slide(a):
     song = playlistBox.get(ACTIVE)
-    song = f'C:\\Users\\HP\\OneDrive\\Desktop\\niki\\tkinter\\songs\\{song}.mp3'
+    song = f'C:\\Users\\songs\\{song}.mp3'
     pygame.mixer.music.load(song)
     pygame.mixer.music.play(loops=0, start=int(SongSlider.get()))
 
