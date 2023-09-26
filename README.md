@@ -22,7 +22,7 @@ The Music Player is a versatile and user-friendly application built using Python
 - 🕒 Track current song progress with a dynamic progress bar.
 - 📈 Simple and intuitive user interface.
 
-  ## Getting Started 🚀
+## Getting Started 🚀
 
 1. Clone the repository.
 2. Ensure you have Python and required libraries installed.
